@@ -34,7 +34,8 @@ This is a **content-based movie recommender system** built using **Streamlit**, 
 
 ---
 
-**## 🧠 How It Works**
+** 🧠 How It Works **
+
 Loads movie metadata and similarity scores from pickle files
 
 Uses a content-based filtering approach (e.g., cosine similarity)
