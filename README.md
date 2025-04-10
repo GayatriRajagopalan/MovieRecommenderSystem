@@ -32,7 +32,9 @@ This is a **content-based movie recommender system** built using **Streamlit**, 
 ├── similarity.pkl         # Precomputed similarity matrix
 ├── README.md              # Project documentation
 
-## 🧠 How It Works
+---
+
+**## 🧠 How It Works**
 Loads movie metadata and similarity scores from pickle files
 
 Uses a content-based filtering approach (e.g., cosine similarity)
@@ -40,6 +42,8 @@ Uses a content-based filtering approach (e.g., cosine similarity)
 Calls TMDb API to fetch movie posters
 
 Displays the results with Streamlit
+
+---
 
 ## 🔧 Setup Instructions
 1. Clone the repo
