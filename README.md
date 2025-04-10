@@ -6,20 +6,20 @@ This is a **content-based movie recommender system** built using **Streamlit**, 
 
 ## 📦 Features
 
-- Select a movie from the dropdown list
-- Get 5 similar movie recommendations
-- Displays movie posters using TMDb API
+- Select a movie from the dropdown list  
+- Get 5 similar movie recommendations  
+- Displays movie posters using TMDb API  
 
 ---
 
 ## 🛠️ Tech Stack
 
-- Python 🐍
-- Streamlit 🎈
-- Pandas 📊
-- Pickle 🧪
-- Requests 🌐
-- TMDb API 🎞️
+- Python 🐍  
+- Streamlit 🎈  
+- Pandas 📊  
+- Pickle 🧪  
+- Requests 🌐  
+- TMDb API 🎞️  
 
 ---
 
@@ -32,59 +32,72 @@ This is a **content-based movie recommender system** built using **Streamlit**, 
 ├── similarity.pkl         # Precomputed similarity matrix
 ├── README.md              # Project documentation
 ├── dataset                # Folder containing the dataset files
-├── Procfile               # Movie metadata dictionary
+├── Procfile               # Deployment instructions
 ├── MovieRecommender       # Jupyter Notebook 
 ├── requirements           # Dependency libraries
-
+```
 
 ---
 
-**🧠 How It Works**
+## 🧠 How It Works
 
 - Loads **movie metadata** and **similarity scores** from pickle files  
 - Uses a **content-based filtering** approach (e.g., cosine similarity)  
 - Calls **TMDb API** to fetch movie posters  
-- Displays the results using **Streamlit**
+- Displays the results using **Streamlit**  
 
 ---
 
-**🔧 Setup Instructions**
+## 🔧 Setup Instructions
 
 1. **Clone the repo**
-
    ```bash
    git clone https://github.com/yourusername/movie-recommender.git
    cd movie-recommender
+   ```
 
-2. Install dependencies
+2. **Install dependencies**
 
-3. Add your TMDb API key
+   You can use pip to install required packages:
 
-Replace the value of api_key in app.py with your TMDb API key
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-api_key = "YOUR_API_KEY_HERE"
-You can get one from The Movie Database.
+3. **Add your TMDb API key**
 
-4. Run the app
+   Replace the value of `api_key` in `app.py` with your TMDb API key:
 
-streamlit run app.py
+   ```python
+   api_key = "YOUR_API_KEY_HERE"
+   ```
 
-📸 Example
+   You can get one from [The Movie Database](https://www.themoviedb.org/documentation/api).
 
-Once you select a movie and hit Recommend, you’ll see five movie suggestions with their posters displayed side-by-side.
+4. **Run the app**
+
+   ```bash
+   streamlit run app.py
+   ```
+
+---
+
+## 📸 Example
+
+Once you select a movie and hit **Recommend**, you’ll see five movie suggestions with their posters displayed side-by-side.
+
+---
 
 ## 📌 Notes
 
-Make sure the files movie_dict.pkl and similarity.pkl are in the same directory.
+- Make sure the files `movie_dict.pkl` and `similarity.pkl` are in the same directory.  
+- This model is based on **content similarity**, not **user behavior**.  
 
-This model is based on content similarity, not user behavior.
+---
 
 ## 💡 Future Improvements
 
-Add user-based collaborative filtering
-
-Include ratings and genres in the recommendation logic
-
-Enhance UI/UX with more filters (year, genre, etc.)
-
-Deploy on Streamlit Cloud or Render
+- Add **user-based collaborative filtering**  
+- Include **ratings and genres** in the recommendation logic  
+- Enhance **UI/UX** with more filters (year, genre, etc.)  
+- Deploy on **Streamlit Cloud** or **Render**
