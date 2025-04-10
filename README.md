@@ -31,23 +31,30 @@ This is a **content-based movie recommender system** built using **Streamlit**, 
 ├── movie_dict.pkl         # Movie metadata dictionary
 ├── similarity.pkl         # Precomputed similarity matrix
 ├── README.md              # Project documentation
+├── dataset                # Folder containing the dataset files
+├── Procfile               # Movie metadata dictionary
+├── MovieRecommender       # Jupyter Notebook 
+├── requirements           # Dependency libraries
+
 
 ---
 
 ## 🧠 How It Works 
 
-Loads movie metadata and similarity scores from pickle files
-
-Uses a content-based filtering approach (e.g., cosine similarity)
-
-Calls TMDb API to fetch movie posters
-
-Displays the results with Streamlit
+- Loads **movie metadata** and **similarity scores** from pickle files  
+- Uses a **content-based filtering** approach (e.g., cosine similarity)  
+- Calls **TMDb API** to fetch movie posters  
+- Displays the results using **Streamlit**
 
 ---
 
 ## 🔧 Setup Instructions
-1. Clone the repo
+
+1. **Clone the repo**
+
+   ```bash
+   git clone https://github.com/yourusername/movie-recommender.git
+   cd movie-recommender
 
 2. Install dependencies
 
